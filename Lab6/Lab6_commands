@@ -1,0 +1,26 @@
+TASK 1:
+gcc Lab6_hello.c -o hello
+./hello 
+
+TASK 2:
+./hello > Lab6_figlet
+
+TASK 3:
+cd /tmp/
+mkdir permissions
+cp ~/Documents/Boston_University/Fall_2021/EC605/advanced-linux/Lab6_hello.c  permissions/
+cd permissions/
+ls -l 
+chmod g+r Lab6_hello.c 
+ls -l Lab6_hello.c 
+Output: -rw-rw-r-- 1 samir samir 80 Nov 23 13:49 Lab6_hello.c
+
+TASK 4:
+gcc Lab6_fork.c -o fork
+./fork
+
+
+TASK 5:
+{ ./fork ; ./fork ; ./fork ;} > Lab6_fork_output
+grep 'Child' Lab6_fork_output > Lab6_fork_child
+grep 'Parent' Lab6_fork_output > Lab6_fork_parent

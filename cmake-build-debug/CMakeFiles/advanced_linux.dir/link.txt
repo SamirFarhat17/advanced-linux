@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/advanced_linux.dir/Lab6_fork.c.o CMakeFiles/advanced_linux.dir/Lab6_hello.c.o -o advanced_linux 
