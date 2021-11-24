@@ -3,7 +3,8 @@ gcc Lab6_hello.c -o hello
 ./hello 
 
 TASK 2:
-./hello > Lab6_figlet
+./hello | figlet > Lab6_figlet
+
 
 TASK 3:
 cd /tmp/

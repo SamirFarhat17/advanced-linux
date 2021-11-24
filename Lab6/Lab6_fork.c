@@ -3,8 +3,9 @@
 #include <unistd.h>
 
 void forkProcess() {
+    pid_t pid = fork();
     // child process running Fibonacci
-    if (fork() != 0) {
+    if (pid != 0) { 
         printf("Child pid %d %d\n", (int) getpid(), 0);
         int a = 0;
         int b = 1;
